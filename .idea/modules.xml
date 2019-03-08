@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/examen_tres.iml" filepath="$PROJECT_DIR$/.idea/examen_tres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beca/project.iml" filepath="$PROJECT_DIR$/beca/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beca/project-commons/project-commons.iml" filepath="$PROJECT_DIR$/beca/project-commons/project-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beca/project-model/project-model.iml" filepath="$PROJECT_DIR$/beca/project-model/project-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beca/project-persistence/project-persistence.iml" filepath="$PROJECT_DIR$/beca/project-persistence/project-persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beca/project-services/project-services.iml" filepath="$PROJECT_DIR$/beca/project-services/project-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beca/project-web/project-web.iml" filepath="$PROJECT_DIR$/beca/project-web/project-web.iml" />
+    </modules>
+  </component>
+</project>
