@@ -2,6 +2,12 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/beca" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/beca-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/beca-service/beca-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/beca-service/beca-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/beca-service/beca-persistence" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/beca-service/beca-services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/beca-service/beca-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/beca/project-commons" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/beca/project-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/beca/project-persistence" charset="UTF-8" />

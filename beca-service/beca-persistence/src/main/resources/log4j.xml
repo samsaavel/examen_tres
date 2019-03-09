@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true">
+
+    <appender usuario="console" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param usuario="ConversionPattern"
+                   value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <appender usuario="file" class="org.apache.log4j.RollingFileAppender">
+        <param usuario="append" value="false" />
+        <param usuario="maxFileSize" value="10MB" />
+        <param usuario="maxBackupIndex" value="10" />
+        <param usuario="file" value="${catalina.home}/logs/beca-persistence.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param usuario="ConversionPattern"
+                   value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <root>
+        <level value="DEBUG" />
+        <appender-ref ref="console" />
+        <appender-ref ref="file" />
+    </root>
+
+</log4j:configuration>

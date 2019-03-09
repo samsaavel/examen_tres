@@ -4,10 +4,10 @@
 <!-- Generar una tabla en Sql Server -->
 <changeSet author="javierrodriguez" id="180119-01">
 	<createTable tableName="C_PRUEBA">
-		<column name="ID" type="INT">
+		<column usuario="ID" type="INT">
 			<constraints nullable="true" primaryKey="false" unique="false"/>
 		</column>
-		<column name="DS_NAME" type="VARCHAR(50)">
+		<column usuario="DS_NAME" type="VARCHAR(50)">
 			<constraints nullable="true" primaryKey="false" unique="false"/>
 		</column>
 	</createTable>
@@ -16,22 +16,22 @@
 <!-- Generara una nueva tabla -->
 <changeSet author="javierrodriguez" id="180119-02">
 	<createTable tableName="K_PUESTO">
-		<column autoIncrement="true" name="ID_PUESTO" type="int">
+		<column autoIncrement="true" usuario="ID_PUESTO" type="int">
 			<constraints primaryKey="true" primaryKeyName="PK_K_USER"/>
 		</column>
-		<column name="DS_NAME" type="nvarchar(30)">
+		<column usuario="DS_NAME" type="nvarchar(30)">
 			<constraints nullable="false"/>
 		</column>
-		<column name="DS_DESC" type="nvarchar(30)">
+		<column usuario="DS_DESC" type="nvarchar(30)">
 			<constraints nullable="false"/>
 		</column>
-		<column name="FG_ACTIVE" type="bit">
+		<column usuario="FG_ACTIVE" type="bit">
 			<constraints nullable="false"/>
 		</column>
-		<column name="DT_LAST_MODIFICATION" type="datetime">
+		<column usuario="DT_LAST_MODIFICATION" type="datetime">
 			<constraints nullable="false"/>
 		</column>
-		<column name="ID_LAST_USER_MODIFIER" type="int">
+		<column usuario="ID_LAST_USER_MODIFIER" type="int">
 			<constraints nullable="false"/>
 		</column>
 	</createTable>
@@ -40,28 +40,28 @@
 <!-- Generara una segunda tabla -->
 <changeSet author="javierrodriguez" id="180119-03">
 	<createTable tableName="K_USER">
-		<column autoIncrement="true" name="ID_USER" type="int">
+		<column autoIncrement="true" usuario="ID_USER" type="int">
 			<constraints primaryKey="true" primaryKeyName="PK_K_USER"/>
 		</column>
-		<column name="DS_NAME" type="nvarchar(30)">
+		<column usuario="DS_NAME" type="nvarchar(30)">
 			<constraints nullable="false"/>
 		</column>
-		<column name="DS_USERNAME" type="nvarchar(30)">
+		<column usuario="DS_USERNAME" type="nvarchar(30)">
 			<constraints nullable="false"/>
 		</column>
-		<column name="DS_EMAIL" type="nvarchar(30)">
+		<column usuario="DS_EMAIL" type="nvarchar(30)">
 			<constraints nullable="false"/>
 		</column>
-		<column name="ID_PUESTO" type="INT">
+		<column usuario="ID_PUESTO" type="INT">
 			<constraints nullable="false"/>
 		</column>
-		<column name="FG_ACTIVE" type="bit">
+		<column usuario="FG_ACTIVE" type="bit">
 			<constraints nullable="false"/>
 		</column>
-		<column name="DT_LAST_MODIFICATION" type="datetime">
+		<column usuario="DT_LAST_MODIFICATION" type="datetime">
 			<constraints nullable="false"/>
 		</column>
-		<column name="ID_LAST_USER_MODIFIER" type="int">
+		<column usuario="ID_LAST_USER_MODIFIER" type="int">
 			<constraints nullable="false"/>
 		</column>
 	</createTable>
@@ -80,12 +80,12 @@ liquibase --changeLogFile="changesets/db.changelog-master.xml" rollbackCount 1
 <!-- Generar Inserts -->
 <changeSet author="javierrodriguez" id="180119-05">
     <insert tableName="C_PRUEBA">
-        <column name="ID" value="1"/>
-        <column name="DS_NAME" value="Prueba1"/>
+        <column usuario="ID" value="1"/>
+        <column usuario="DS_NAME" value="Prueba1"/>
     </insert>
     <insert tableName="C_PRUEBA">
-        <column name="ID" value="2"/>
-        <column name="DS_NAME" value="Prueba2"/>
+        <column usuario="ID" value="2"/>
+        <column usuario="DS_NAME" value="Prueba2"/>
     </insert>
 </changeSet>
 
